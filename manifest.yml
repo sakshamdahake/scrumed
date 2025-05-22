@@ -1,0 +1,29 @@
+modules:
+  jira:issuePanel:
+    - key: ai-scrum-panel
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: SCRUMED
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/scrumed/build
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - read:user:jira
+    - manage:jira-configuration
+  external:
+    fetch:
+      backend:
+        - https://xyz.com #backend api here
+app:
+  runtime:
+    name: nodejs22.x
+  id: ari:cloud:ecosystem::app/0d261f96-f4d5-4b04-ad83-25aad6febda2
