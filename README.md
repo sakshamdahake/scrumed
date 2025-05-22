@@ -1,6 +1,6 @@
-# Forge Hello World
+# SCRUMED
 
-This project contains a Forge app written in Javascript that displays `Hello World!` in a Jira issue panel. 
+This project contains a Forge app written in Javascript that features an Agentic AI connector for Atlassian JIRA. 
 
 See [developer.atlassian.com/platform/forge/](https://developer.atlassian.com/platform/forge) for documentation and tutorials explaining Forge.
 
